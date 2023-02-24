@@ -1,0 +1,73 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FAFAFA;
+  ;
+}
+
+.card {
+  background-color: #262626;
+  border-radius: .75rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem;
+}
+
+.instructions {
+  font-size: .75rem;
+}
+
+label {
+  font-size: .75rem;
+  padding-bottom: 2px;
+}
+
+.textInput {
+  background-color: #2D2D2D;
+  border-radius: .75rem;
+  border: 0px;
+  width: 100%;
+  padding: .5rem 0rem;
+}
+
+.submit {
+  background-color: #DBDBDC;
+  border-radius: .75rem;
+  border: 0px;
+  color: #0A0A0B;
+  width: 100%;
+  padding: .5rem;
+}
+
+.signIn {
+  display: flex; 
+  align-self: center;
+  gap: 5px;
+}
+
+.signInButton {
+  all: unset;
+  background: linear-gradient(225deg, #3EDCFF 0%, #3E9AFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.checkbox {
+  margin: 10px 0px;
+  background-color: #0A0A0B;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
