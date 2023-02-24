@@ -1,8 +1,11 @@
 import './css/App.css';
 import React from 'react'; 
-import logo from './static/oath.svg'
+import oathLogo from './static/oath.svg';
+import githubLogo from './static/github.svg';
+import googleLogo from './static/google.svg';
 
 function App() {
+
 
   return (
     <div className="App">
@@ -11,16 +14,21 @@ function App() {
           <p className="instructions">Sign up to PostgressML by entering an email and password.</p>
           <form className="signupForm">
             <label>Email</label>
-            <input className="textInput" type="text"/>
+            <input className="textInput" type="text" placeholder='example@yahoo.com'/>
             <label>Create Password</label>
             <input className="textInput" type="text"/>
             <label>Repeat Password</label>
             <input className="textInput" type="text"/>
-            <label><input type="checkbox" className="checkbox"/> By creating an account you agree with the Terms of Service and our Privacy Policy</label>
+            <div className="checkboxContainer">
+              <input type="checkbox" className="checkbox"/> 
+              <p>By creating an account you agree with the <a className="link" href="https://www.example.com">Terms of Service</a> and our <a className="link" href="https://www.example.com">Privacy Policy</a></p>
+            </div>
             <input className="submit" type="submit"/>
           </form>
           <div className="icons">
-            <img src={logo}/>
+            <img src={oathLogo}/>
+            <img src={githubLogo}/>
+            <img src={googleLogo}/>
           </div>
           <div className="signIn">
               <p>Have an accont? </p>
